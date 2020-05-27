@@ -1,0 +1,51 @@
+.content {
+  background-color: var(--divider);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .article-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 5rem 0 10rem 0;
+
+    .article {
+      background-color: white;
+      padding: 0 5rem;
+      border-radius: 0.3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: var(--box-shadow);
+      h2 {
+        margin-top: 2rem;
+        margin-bottom: 0;
+      }
+      &-author {
+        color: var(--silver);
+        margin-bottom: 3rem;
+      }
+      .article-content {
+        max-width: 550px;
+      }
+      .article-actions {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 2rem 0;
+        border-top: 1px solid var(--divider);
+        margin-top: 2rem;
+
+        .btn {
+          margin-left: 0.5rem;
+        }
+      }
+
+      img {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        margin-top: -3rem;
+      }
+    }
+  }
+}
