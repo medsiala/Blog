@@ -16,7 +16,7 @@
 }
 header {
   grid-area: header;
-  background-color: green;
+  background-color: var(--primary);
   padding: 20px;
   display: flex;
   flex-flow: row nowrap;

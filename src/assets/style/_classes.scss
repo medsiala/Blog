@@ -23,6 +23,10 @@
     border: 1px solid var(--primary);
     color: var(--primary);
   }
+  &-danger {
+    border: 1px solid var(--error);
+    color: var(--error);
+  }
 }
 .text {
   &-error {

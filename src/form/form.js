@@ -28,7 +28,13 @@ form.addEventListener("submit", async (event) => {
   }
 });
 const formValid = (article) => {
-  if (!article.author || !article.categorie || !article.content) {
+  if (
+    !article.author ||
+    !article.categorie ||
+    !article.content ||
+    !article.img ||
+    !article.title
+  ) {
     errors.push("Vous devez renseigner tous les champs");
   } else {
     errors = [];
