@@ -25,22 +25,56 @@ header {
   a {
     color: white;
   }
-  .header-brand {
-    font-size: 3rem;
-    font-weight: 700;
+  .header-menu {
+    .header-brand {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    ul {
+      @include xs {
+        display: none;
+      }
+      display: flex;
+      li {
+        .header-nav {
+          font-size: 1.8rem;
+          padding: 0 10px;
+        }
+      }
+    }
+    .active {
+      font-weight: 700;
+      text-decoration: underline;
+    }
   }
-  ul {
-    display: flex;
-    li {
-      .header-nav {
-        font-size: 1.8rem;
-        padding: 0 10px;
+  .header-menu-icons {
+    display: none;
+    @include xs {
+      display: block;
+      font-size: 3rem;
+      color: white;
+    }
+  }
+  .mobile-menu {
+    display: none;
+    box-shadow: var(--box-shadow);
+    position: absolute;
+    top: 9.5rem;
+    right: 1rem;
+    padding: 3rem 1.5rem;
+    background-color: white;
+    ul {
+      display: block;
+      li {
+        margin: 1rem 0;
+        a {
+          color: var(--text);
+        }
       }
     }
   }
-  .active {
-    font-weight: 700;
-    text-decoration: underline;
+  .mobile-menu.open {
+    display: block;
   }
 }
 
